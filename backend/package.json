@@ -1,0 +1,41 @@
+{
+  "name": "backend-for-all",
+  "version": "1.0.0",
+  "description": "A strong backend that used for web, mobile and desktop apps",
+  "keywords": [
+    "backend",
+    "nodejs",
+    "expressjs",
+    "fullstack"
+  ],
+  "homepage": "https://github.com/AnoopGeorge418/BrainFlow#readme",
+  "bugs": {
+    "url": "https://github.com/AnoopGeorge418/BrainFlow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnoopGeorge418/BrainFlow.git"
+  },
+  "license": "ISC",
+  "author": "Anoop George",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongodb": "^6.19.0",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prisma": "^6.15.0"
+  }
+}
