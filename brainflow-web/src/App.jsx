@@ -1,9 +1,21 @@
+import React from "react"
+import { BrowserRouter, Routes, Route } from "react-router"
+import Landing from "./pages/Landing.jsx"
+import Login from "./pages/Login.jsx"
+import Apps from "./pages/GetApps.jsx"
+import SignUp from "./pages/SignUp.jsx"
+
+
 function App() {
   return (
-    <>
-      <h1 className="bg-blue-500">This is a heading</h1>
-      <h2>This is working as i wanted this to be!</h2>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />}/>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/apps" element={<Apps />}/>
+        <Route path="/signup" element={<SignUp />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
